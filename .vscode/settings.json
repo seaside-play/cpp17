@@ -140,5 +140,12 @@
             "name": "123"
         }
     ],
-    "sqltools.useNodeRuntime": true
+    "sqltools.useNodeRuntime": true,
+    "debug.console.fontFamily": "DejaVu Sans Mono",
+    "debug.console.fontSize": 18,
+    "terminal.integrated.fontFamily": "DejaVu Sans Mono",
+    "terminal.integrated.fontSize": 18,
+    "screencastMode.fontSize": 56,
+    "chat.editor.fontSize": 18,
+    "chat.editor.fontWeight": "DejaVu Sans Mono"
 }
