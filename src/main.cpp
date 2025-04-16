@@ -4,25 +4,20 @@
 #include <iomanip>
 
 #include "sun/earth/basic.hpp"
+#include "sun/cpp17/basic_language.hpp"
 
 void TestCompileDefinition();
 void test_hex_to_char();
+void TestSynergyKey();
 std::string encode(const std::string& plainText);
 std::string decode(const std::string &hexString);
 
 int main(int agrc, char** argv) {
-    std::cout << "hello world!\n";
+
+    sun::BasicLanguage basic_language;
+    basic_language.Test();
 
     std::cout << "3 + 2 = " << Add(3, 2) << std::endl;
-
-    // test_hex_to_char();
-    TestCompileDefinition();
-
-    std::string raw_key = "{v1;basic;name;seats;email;company;1845620137;1845806537}";
-    auto encrypted_key = encode(raw_key);
-    std::cout << "encrypted key: " << encrypted_key << std::endl;
-    auto result = decode(encrypted_key);
-    std::cout << "result key: " << result << std::endl;
 
     return 0;
 }
@@ -40,6 +35,14 @@ void TestCompileDefinition() {
 #else
     std::cout << "now is not gunlinux\n";
 #endif
+}
+
+void TestSynergyKey() {
+    std::string raw_key = "{v1;basic;name;seats;email;company;1845620137;1845806537}";
+    auto encrypted_key = encode(raw_key);
+    std::cout << "encrypted key: " << encrypted_key << std::endl;
+    auto result = decode(encrypted_key);
+    std::cout << "result key: " << result << std::endl;
 }
 
 std::string decode(const std::string &hexString)
