@@ -1,0 +1,3 @@
+#ifndef SUM_BASIC_LANGUAGE_H_
+#define SUM_BASIC_LANGUAGE_H_
+#endif // SUM_BASIC_LANGUAGE_H_
